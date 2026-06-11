@@ -1,0 +1,17 @@
+{
+  "name": "spooky-auction-sniper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mineflayer auction scanner/sniper with per-item price memory.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check config.js && find src -name '*.js' -print0 | xargs -0 -n1 node --check"
+  },
+  "dependencies": {
+    "mineflayer": "^4.33.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
